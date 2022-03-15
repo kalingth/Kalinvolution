@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-with open("README.md", 'r') as f:
+with open("README.md", 'r', encoding="UTF8") as f:
     page_description = f.read()
 
-with open("requirements.txt", 'r') as f:
-    requirements = f.read().splitlines()
+with open("requirements.txt", 'r', encoding="UTF8") as f:
+    requirements = f.read().split('\n')
 
 setup(
     name="kalinvolution",
